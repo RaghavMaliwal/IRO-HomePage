@@ -1,0 +1,370 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Lora";
+}
+
+header {
+  height: 8rem;
+  width: 100%;
+  background-color: #ffd700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5rem;
+}
+header span {
+  font-size: 1.5rem;
+}
+header img {
+  height: 6rem;
+  margin-right: 1rem;
+}
+
+#menu-items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+#menu-items li {
+  margin-left: 1.5rem;
+}
+
+#menu-items li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+li:hover,
+img:hover,
+header span:hover {
+  cursor: pointer;
+}
+
+#menu-items li:hover {
+  opacity: 0.5;
+  border-bottom: black 2px solid;
+}
+/*header ends*/
+
+footer {
+  height: 20rem;
+  width: 100%;
+  background-color: #ffd700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#googleMap {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+iframe {
+  height: 15rem;
+  width: 30rem;
+}
+
+.quickLinks,
+#social {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+}
+
+.quickLinks span,
+#social span {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+#links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+}
+
+#links li {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+#links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+#links li:hover {
+  opacity: 0.5;
+}
+
+.social-media a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: black 2px solid;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: black;
+  margin: 0.2rem;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  background: black;
+  color: #ffd700;
+}
+/*footer ends here*/
+
+#aboutIIT {
+  height: 35rem;
+  width: 100%;
+  background-color: #ffd70080;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#details {
+  width: 50%;
+  margin-left: 5rem;
+}
+
+#videoIntroduction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+}
+
+#videoIntroduction iframe {
+  height: 20rem;
+  width: 35rem;
+  border: solid 5px #ffd700;
+}
+
+/*about iit ends*/
+
+#aboutIRO {
+  height: 28rem;
+  width: 100%;
+  background-color: #ffd70050;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+}
+
+.content {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+}
+.content h1 {
+  width: 100%;
+}
+
+.content li {
+  list-style-type: none;
+  margin-left: 2rem;
+}
+/*iro intro ends*/
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#uni-infinite-carousel {
+  overflow: hidden;
+  padding: 30px 0;
+  background: white;
+  white-space: nowrap;
+}
+
+#uni-infinite-carousel h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.slide img {
+  height: 5rem;
+  margin: 0 40px;
+}
+
+#uni-infinite-carousel:hover .slide {
+  animation-play-state: paused;
+}
+/*carousel end*/
+
+.staffSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd70050;
+}
+.staffSection h1 {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.staffdiv,
+.deandiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35rem;
+  width: 25%;
+  background-color: #ffd700;
+  border: #ffd700 solid 5px;
+  border-radius: 5%;
+  margin-left: 3rem;
+}
+.profile-card img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  position: relative;
+  border: #ffd700 solid 5px;
+}
+
+#name {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.profile-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.staff-card {
+  display: flex;
+  flex-direction: row;
+  height: 12rem;
+  width: 40%;
+  border-radius: 9999px;
+  margin-left: 2rem;
+  background-color: #ffd700;
+}
+.staff-card img {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  border: #ffd700 solid 5px;
+}
+
+.staff-card #name,
+.staff-card #email,
+.staff-card #number,
+.staff-card #designation {
+  font-size: 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.profile-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.staffdiv {
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+}
+/*staff ends*/
+
+.coursesOffered {
+  height: 25rem;
+  width: 100%;
+  background-color: #ffd70080;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.coursesection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.coursesOffered h1 {
+  width: 100%;
+  text-align: center;
+}
+.course {
+  height: 8rem;
+  width: 25%;
+  background-color: #ffd70050;
+  margin-right: 3%;
+}
+
+.course p {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.course a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  bottom: -20%;
+  right: -65%;
+}
+
+.course a:hover {
+  opacity: 0.5;
+}
